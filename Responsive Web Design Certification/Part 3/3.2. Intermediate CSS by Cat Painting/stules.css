@@ -12,16 +12,15 @@ body {
     border: 1px solid #000;
     border-radius: 46%;
     background: linear-gradient(#5e5e5e 85%, #45454f 100%);
-    position: absolute;
-    top: 70px;
-    left: 120px;
+    position: sticky;
+    top: 0px;
 }
 
 .box {
     width: 200px;
     height: 600px;
     background: #000;
-    position: fixed;
+    position: absolute;
     top: 800px;
     left: 650px;
 }
