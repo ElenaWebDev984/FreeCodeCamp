@@ -20,11 +20,3 @@ body {
     top: 0px;
 }
 
-.box {
-    width: 200px;
-    height: 600px;
-    background: #000;
-    position: absolute;
-    top: 800px;
-    left: 650px;
-}
