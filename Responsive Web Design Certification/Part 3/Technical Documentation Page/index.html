@@ -1,39 +1,94 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Функции в JavaScript</title>
+    <title>Functions</title>
 </head>
 <body>
     <main id="main-doc">
-        <section class="main-section" id="function_JS">
-            <header>Функции в JavaScript</header>
+        <section class="main-section" id="functions">
+            <header>
+                <h1>Functions</h1>
+            </header>
+            <p>Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.</p>
         </section>
-        <section class="main-section" id="declaration">
-            <header>Объявление функций</header>
+        <section class="main-section" id="defining">
+            <header>
+                <h1>Defining functions</h1>
+            </header>
+            <h2>Function declarations</h2>
+            <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+            <ul>
+                <li>The name of the function.</li>
+                <li>A list of parameters to the function, enclosed in parentheses and separated by commas.</li>
+                <li>The JavaScript statements that define the function, enclosed in curly braces, { /* … */ }.</li>
+            </ul>
+            <h2>Function expressions</h2>
+            <p>While the function declaration above is syntactically a statement, functions can also be created by a function expression.</p>
         </section>
-        <section class="main-section" id="calls">
-            <header>Вызовы функций</header>
+        <section class="main-section" id="calling">
+            <header>
+                <h1>Calling functions</h1>
+            </header>
+            <p>Defining a function does not execute it. Defining it names the function and specifies what to do when the function is called.
+            <br><br>
+            Calling the function actually performs the specified actions with the indicated parameters.</p>
+            <h2>Function hoisting</h2>
+            <p>Function hoisting only works with function declarations — not with function expressions. </p>
         </section>
         <section class="main-section" id="scope">
-            <header>Область видимости функций</header>
+            <header>
+                <h1>Function scope</h1>
+            </header>
+            <p>Variables defined inside a function cannot be accessed from anywhere outside the function, because the variable is defined only in the scope of the function. However, a function can access all variables and functions defined inside the scope in which it is defined.</p>
+            <p>In other words, a function defined in the global scope can access all variables defined in the global scope. A function defined inside another function can also access all variables defined in its parent function, and any other variables to which the parent function has access.</p>
         </section>
         <section class="main-section" id="stack">
-            <header>Scope и стек функции</header>
+            <header>
+                <h1>Scope and the function stack</h1>
+            </header>
+            <h2>Recursion</h2>
+            <p>A function can refer to and call itself. There are three ways for a function to refer to itself:</p>
+            <ol>
+                <li>The function's name</li>
+                <li>arguments.callee</li>
+                <li>An in-scope variable that refers to the function</li>
+            </ol>
         </section>
         <section class="main-section" id="closures">
-            <header>Замыкания</header>
+            <header>
+                <h1>Closures</h1>
+            </header>
+            <p>Closures are one of the most powerful features of JavaScript. JavaScript allows for the nesting of functions and grants the inner function full access to all the variables and functions defined inside the outer function (and all other variables and functions that the outer function has access to).</p>
+            <p>However, the outer function does not have access to the variables and functions defined inside the inner function. This provides a sort of encapsulation for the variables of the inner function.</p>
+            <p>Also, since the inner function has access to the scope of the outer function, the variables and functions defined in the outer function will live longer than the duration of the outer function execution, if the inner function manages to survive beyond the life of the outer function. A closure is created when the inner function is somehow made available to any scope outside the outer function.</p>
         </section>
         <section class="main-section" id="arguments">
-            <header>Использование объекта arguments</header>
+            <header>
+                <h1>Using the arguments object</h1>
+            </header>
+            <p>The arguments of a function are maintained in an array-like object. </p>
+            <p>Using the arguments object, you can call a function with more arguments than it is formally declared to accept. This is often useful if you don't know in advance how many arguments will be passed to the function. You can use arguments.length to determine the number of arguments actually passed to the function, and then access each argument using the arguments object.</p>
         </section>
         <section class="main-section" id="parameters">
-            <header>Параметры функции</header>
+            <header>
+                <h1>Function parameters</h1>
+            </header>
+            <p>There are two special kinds of parameter syntax: default parameters and rest parameters.</p>
+            <h2>Default parameters</h2>
+            <p>In JavaScript, parameters of functions default to undefined. However, in some situations it might be useful to set a different default value. This is exactly what default parameters do.</p>
+            <p>In the past, the general strategy for setting defaults was to test parameter values in the body of the function and assign a value if they are undefined.</p>
+            <h2>Rest parameters</h2>
+            <p>The rest parameter syntax allows us to represent an indefinite number of arguments as an array.</p>
         </section>
         <section class="main-section" id="arrow_functions">
-            <header>Стрелочные функции</header>
+            <header>
+                <h1>Arrow functions</h1>
+            </header>
+            <p>An arrow function expression (also called a fat arrow to distinguish from a hypothetical -> syntax in future JavaScript) has a shorter syntax compared to function expressions and does not have its own this, arguments, super, or new.target. Arrow functions are always anonymous.</p>
+            <p>Two factors influenced the introduction of arrow functions: shorter functions and non-binding of this.</p>
         </section>
     </main>
 </body>
