@@ -8,7 +8,7 @@
 
 html,
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: Rubik, sans-serif;
   font-style: normal;
   min-width: 375px;
 }
@@ -36,14 +36,14 @@ ul {
 }
 
 h1 {
-  color: #0c6231;
+  color: #132d1e;
   font-size: 32px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 43px;
 }
 
 .form-title {
-  color: #1d772e;
+  color: #15461e;
   font-size: 20px;
   font-weight: 500;
   line-height: 22px;
@@ -57,4 +57,29 @@ h1 {
   margin-left: auto; 
   margin-right: auto; 
   border: 1px solid red; // ПОТОМ УДАЛИТЬ
+}
+
+header {
+  padding: 14px 0;
+  background: #bcdcc7;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 100px;
+}
+
+.nav-link {
+  color: #0e480e;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px; 
+    letter-spacing: 1.4px;
+    /* text-transform: uppercase; */
 }
