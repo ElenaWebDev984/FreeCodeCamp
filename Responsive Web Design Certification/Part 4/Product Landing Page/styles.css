@@ -12,3 +12,49 @@ body {
   font-style: normal;
   min-width: 375px;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  color: #0c6231;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 43px;
+}
+
+.form-title {
+  color: #1d772e;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1170px; 
+  padding: 0 15px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  border: 1px solid red; // ПОТОМ УДАЛИТЬ
+}
