@@ -29,10 +29,19 @@ ul {
 .btn {
   cursor: pointer;
   transition: 0.2s;
+  margin-top: 30px;
 }
 
 .btn:hover {
   transform: translateY(-5px);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 h1 {
@@ -56,7 +65,7 @@ h1 {
   padding: 0 15px; 
   margin-left: auto; 
   margin-right: auto; 
-  border: 1px solid red; // ПОТОМ УДАЛИТЬ
+  /* border: 1px solid red; // ПОТОМ УДАЛИТЬ */
 }
 
 header {
@@ -82,4 +91,55 @@ header {
     line-height: 20px; 
     letter-spacing: 1.4px;
     /* text-transform: uppercase; */
+}
+
+.cartel {
+  margin: 50px 0;
+  /* max-width: 656px; */
+  width: 100%;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.abetos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: calc(100% / 3);
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 576px)  {
+  
+  .main-info {
+      margin: 60px 0;
+  }
+
+  .main-title {
+      font-size: 52px;
+      line-height: 60px;
+  }
+
+  .account-wrapper {
+      gap: 60px;
+  }
+
+  label {
+      white-space: nowrap;
+  }
+
+  fieldset {
+      flex-wrap: wrap;
+      row-gap: 20px; /* чтобы строки не прижимались друг к другу */
+  
+}
 }
