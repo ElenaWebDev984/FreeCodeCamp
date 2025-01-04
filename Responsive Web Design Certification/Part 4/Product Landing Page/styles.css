@@ -13,17 +13,59 @@ body {
   min-width: 375px;
 }
 
-a {
-  text-decoration: none;
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1170px; 
+  padding-top: 100px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  /* border: 1px solid red; // ПОТОМ УДАЛИТЬ */
 }
 
-a:hover {
-  text-decoration: underline;
-  cursor: pointer;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #bcdcc7;
+  z-index: 1000;
 }
 
-ul {
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-img {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* #nav-bar {
+  display: flex;
+  flex-direction: row;
+} */
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
   list-style: none;
+}
+
+.nav-link {
+  color: #0e480e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #278a44;
 }
 
 .btn {
@@ -58,41 +100,6 @@ h1 {
   line-height: 22px;
 }
 
-.container {
-  height: 100%;
-  width: 100%;
-  max-width: 1170px; 
-  padding: 0 15px; 
-  margin-left: auto; 
-  margin-right: auto; 
-  /* border: 1px solid red; // ПОТОМ УДАЛИТЬ */
-}
-
-header {
-  padding: 14px 0;
-  background: #bcdcc7;
-}
-
-.header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  gap: 100px;
-}
-
-.nav-link {
-  color: #0e480e;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px; 
-    letter-spacing: 1.4px;
-    /* text-transform: uppercase; */
-}
-
 .cartel {
   margin: 50px 0;
   /* max-width: 656px; */
@@ -124,22 +131,5 @@ header {
       margin: 60px 0;
   }
 
-  .main-title {
-      font-size: 52px;
-      line-height: 60px;
-  }
-
-  .account-wrapper {
-      gap: 60px;
-  }
-
-  label {
-      white-space: nowrap;
-  }
-
-  fieldset {
-      flex-wrap: wrap;
-      row-gap: 20px; /* чтобы строки не прижимались друг к другу */
   
-}
 }
